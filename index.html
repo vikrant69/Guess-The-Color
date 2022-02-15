@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="top">
+        <div>
+            <h2>The Great Color Game</h2>
+        
+            <h3 id="generate-rgb" >RGB(0,0,0)</h3>
+            
+            <h4 id="win"></h4>
+        </div>
+        
+    </div>
+
+    <div id="middle">
+        <div id="m-middle">
+            <button id='b1' onclick="alterRGB()">Start</button>
+            <button id='b2' onclick="reset()">Reset</button>
+        </div>
+    </div>
+
+    <div id="bottom">
+        <div class="box" id="box1" onclick="check1()"></div>
+        <div class="box" id="box2" onclick="check2()"></div>
+        <div class="box" id="box3" onclick="check3()"></div>
+        <br>
+        <div class="box" id="box4" onclick="check4()"></div>
+        <div class="box" id="box5" onclick="check5()"></div>
+        <div class="box" id="box6" onclick="check6()"></div>
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
